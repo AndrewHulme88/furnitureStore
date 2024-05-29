@@ -1,79 +1,92 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Furniture Store</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <div class="container">
-       <!-- Furniture Image and Name -->
-       <div class="furniture-item">
-            <img src="furniture_image.jpg" alt="Furniture Item">
-            <h2>Furniture Name</h2>
-       </div>
+    <div class="furniture-container">
+        <h1>Choose Your Furniture</h1>
+        <div class="options">
+            <label for="category">Category:</label>
+            <select id="category">
+                <option value="sofas">Sofas</option>
+                <option value="tables">Tables</option>
+                <!-- Add more categories here -->
+            </select>
+        </div>
 
-       <!-- Furniture Options -->
-       <div class="options"><!DOCTYPE html>
-        <html>
-        <head>
-            <title>Furniture Store</title>
-            <link rel="stylesheet" href="style.css">
-        </head>
-        <body>
-            <div class="furniture-container">
-                <h1>Choose Your Furniture</h1>
-                <div class="furniture">
-                    <img src="furniture1.jpg" alt="Furniture 1">
-                    <h2>Furniture 1</h2>
-                    <p>Select options:</p>
-                    <div class="options">
-                        <label for="color1">Color:</label>
-                        <select id="color1">
-                            <option value="red">Red</option>
-                            <option value="blue">Blue</option>
-                            <option value="green">Green</option>
-                        </select>
+        <div class="furniture-category" id="sofas">
+            <h2>Sofas</h2>
+            <div class="furniture">
+                <img src="furniture1.jpg" alt="Sofa 1">
+                <h3>Sofa 1</h3>
+                <p>Select options:</p>
+                <div class="options">
+                    <label for="color1">Color:</label>
+                    <select id="color1">
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                    </select>
 
-                        <label for="material1">Material:</label>
-                        <select id="material1">
-                            <option value="wood">Wood</option>
-                            <option value="metal">Metal</option>
-                            <option value="plastic">Plastic</option>
-                        </select>
+                    <label for="material1">Material:</label>
+                    <select id="material1">
+                        <option value="wood">Wood</option>
+                        <option value="metal">Metal</option>
+                        <option value="plastic">Plastic</option>
+                    </select>
 
-                        <label for="size1">Size:</label>
-                        <select id="size1">
-                            <option value="small">Small</option>
-                            <option value="medium">Medium</option>
-                            <option value="large">Large</option>
-                        </select>
-                    </div>
+                    <label for="size1">Size:</label>
+                    <select id="size1">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
                 </div>
-
-                <!-- Add more furniture pieces here -->
-
-                <button id="submitButton">Submit Purchase</button>
             </div>
 
-            <script src="script.js"></script>
-        </body>
-        </html>
-           <h3>Select Color:</h3>
-           <div class="color-options"></div>
+            <!-- Add more sofa pieces here -->
+        </div>
 
-           <h3>Select Material:</h3>
-           <div class="material-options"></div>
+        <div class="furniture-category" id="tables">
+            <h2>Tables</h2>
+            <div class="furniture">
+                <img src="furniture2.jpg" alt="Table 1">
+                <h3>Table 1</h3>
+                <p>Select options:</p>
+                <div class="options">
+                    <label for="color2">Color:</label>
+                    <select id="color2">
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                    </select>
 
-           <h3>Select Size:</h3>
-           <div class="size-options"></div>
-       </div>
+                    <label for="material2">Material:</label>
+                    <select id="material2">
+                        <option value="wood">Wood</option>
+                        <option value="metal">Metal</option>
+                        <option value="plastic">Plastic</option>
+                    </select>
 
-       <!-- Add to Cart button -->
-       <button class="add-to-cart">Add to Cart</button>
-   </div>
+                    <label for="size2">Size:</label>
+                    <select id="size2">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                </div>
+            </div>
 
-   <script src="app.js"></script>
+            <!-- Add more table pieces here -->
+        </div>
+
+        <!-- Add more furniture categories and pieces here -->
+
+        <button id="submitButton">Submit Purchase</button>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
